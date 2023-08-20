@@ -1,0 +1,26 @@
+== Test the Application
+
+Test the end-to-end result by starting the application. You can start the application in
+your IDE or use the command line. Once the application is running, visit the client
+application in the browser, at `http://localhost:8080/`. There, you should see
+`Hello, World` reflected in the response.
+
+If you use Gradle, the following command (really two commands run in sequence) will first
+build the library and then run the application:
+
+====
+[source,bash]
+----
+./gradlew build && ./gradlew :application:bootRun
+----
+====
+
+If you use Maven, the following command (really two commands run in sequence) will first
+build the library and then run the application:
+
+====
+[source,bash]
+----
+./mvnw install && ./mvnw spring-boot:run -pl application
+----
+====

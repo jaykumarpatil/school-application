@@ -1,0 +1,4 @@
+rootProject.name = 'school-application'
+
+include 'library'
+include 'application'
